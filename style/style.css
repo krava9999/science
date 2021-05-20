@@ -3,6 +3,36 @@
   padding: 0;
 }
 
+.blue-btn {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 306px;
+  text-decoration: none;
+  background: #312AB0;
+  border-radius: 40px;
+  padding: 15px 0;
+}
+
+.heading-line {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  width: 88px;
+}
+
+.heading-with-line {
+  max-width: 164px;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.065em;
+  color: #312AB0;
+  margin-left: 15px;
+}
+
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,22 +255,6 @@
           justify-content: space-between;
 }
 
-.excursion__line {
-  border: 1px solid rgba(0, 0, 0, 0.13);
-  width: 88px;
-}
-
-.excursion__heading {
-  max-width: 164px;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 31px;
-  letter-spacing: 0.065em;
-  color: #312AB0;
-  margin-left: 15px;
-}
-
 .excursion__text {
   font-family: roboto;
   font-style: normal;
@@ -254,17 +268,6 @@
 }
 
 .excursion__btn {
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 306px;
-  text-decoration: none;
-  background: #312AB0;
-  border-radius: 40px;
-  padding: 15px 0;
   margin: 0 auto;
   margin-top: 23px;
 }
@@ -329,5 +332,97 @@
   position: absolute;
   left: 42%;
   top: 45%;
+}
+
+.visit {
+  padding-top: 60px;
+  padding-bottom: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.visit__heading-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.visit__heading {
+  text-align: center;
+  margin-left: 0;
+}
+
+.visit__line {
+  width: 80px;
+}
+
+.visit__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  gap: 35px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.visit__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.visit__item-img {
+  margin-right: 27px;
+}
+
+.visit__item-text-box {
+  max-width: 226px;
+}
+
+.visit__item-heading {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.065em;
+  color: #312AB0;
+}
+
+.visit__item-text {
+  font-family: roboto;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  margin-top: 6px;
+}
+
+.visit__map {
+  margin-top: 35px;
+  width: 100%;
+}
+
+.visit__btn {
+  width: 306px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
