@@ -360,3 +360,85 @@
     }
 
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 2px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+    }
+
+    &__logo {
+        margin-right: 49px;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 37.65px;
+        padding-bottom: 48px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    }
+
+    &__tel-ico {
+        margin-bottom: 20.45px;
+    }
+
+    &__tel {
+        font-family: $fontProject;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+
+        &_margin {
+            margin-bottom: 13px;
+        }
+
+    }
+
+    &__email-ico {
+        margin-top: 17px;
+        margin-bottom: 13px;
+    }
+
+    &__email {
+        font-family: $fontProject;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 28px;
+        padding-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        gap: 13px;
+    }
+
+    &__link {
+        font-family: $fontProject;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+        text-decoration: none;
+    }
+}
