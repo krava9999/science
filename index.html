@@ -38,7 +38,6 @@
 
         </div>
         <div class="header__bottom">
-            <div class="header__slider-box"></div>
             <div class="header__hide-menu">
                 <nav class="header__menu-nav">
                     <ul class="header__menu-list">
@@ -56,7 +55,7 @@
                                     d="M45.7526 10.9731L22.9836 0.0835453L22.9436 0L22.8762 0.0322178L22.809 6.81877e-05L22.7691 0.0834365L0 10.973L0.431455 11.8752L3.4241 13.8703L3.9788 13.0382L1.48117 11.3731L22.8762 1.1407L44.0948 11.2887L35.3481 14.7874V12.8727V12.3688L35.5617 11.923C27.7248 8.1692 19.3978 7.07856 10.1742 11.9314L10.407 12.3739V15.7449L6.86405 13.9734L6.41684 14.8679L10.407 16.8629V23.8457V23.8458C10.407 25.4986 15.9897 26.8384 22.8763 26.8384C29.763 26.8384 35.3457 25.4986 35.3457 23.8458V23.8457H35.3481V15.8644L45.3212 11.8752L45.3213 11.8752L45.3212 11.8751L45.7526 10.9731ZM34.3481 12.4604C27.181 9.20983 19.6798 8.3541 11.407 12.4258V22.6696C13.3111 21.6015 17.7295 20.8531 22.8763 20.8531C28.0253 20.8531 32.4454 21.6022 34.3481 22.671V12.8727V12.4604ZM4.91921 23.784V23.8457H5.2589C5.68649 24.0033 6.09228 24.4705 6.15764 25.3409H3.6833C3.7659 24.2408 4.39231 23.7848 4.91921 23.784ZM6.66679 25.5915H6.41679V25.8409H5.91802C6.19348 25.8409 6.41679 26.0642 6.41679 26.3397C6.41679 26.6151 6.19348 26.8385 5.91802 26.8385H3.92292C3.64746 26.8385 3.42415 26.6151 3.42415 26.3397C3.42415 26.0642 3.64746 25.8409 3.92292 25.8409H3.42415V25.5915H3.17415C3.17415 24.1317 3.98893 23.2848 4.91921 23.284V10.8776H5.41921V23.369C6.12429 23.6173 6.66679 24.4004 6.66679 25.5915ZM33.8723 23.5507C34.1026 23.6814 34.2254 23.782 34.2895 23.8458C34.2254 23.9096 34.1026 24.0102 33.8723 24.1409C33.3582 24.4326 32.5479 24.7284 31.4601 24.9895C29.3002 25.5079 26.2649 25.8384 22.8763 25.8384C19.4878 25.8384 16.4524 25.5079 14.2925 24.9895C13.2047 24.7284 12.3944 24.4326 11.8804 24.1409C11.65 24.0102 11.5272 23.9096 11.4631 23.8458C11.5272 23.782 11.65 23.6814 11.8804 23.5507C12.3944 23.259 13.2047 22.9631 14.2925 22.7021C16.4524 22.1837 19.4878 21.8531 22.8763 21.8531C26.2649 21.8531 29.3002 22.1837 31.4601 22.7021C32.5479 22.9631 33.3582 23.259 33.8723 23.5507Z"
                                     fill="#312AB0" />
                             </svg>
-                            <p class="header__page-nav-text">Образование</p>
+                            <p class="header__page-nav-text header__page-nav-text_margin ">Образование</p>
                         </a>
                         <a href="" class="header__page-nav-item">
                             <svg width="28" height="33" viewBox="0 0 28 33" fill="none"
@@ -70,26 +69,45 @@
 
                     </div>
                 </nav>
-
+                <a href="#" class="header__menu-btn">Купить билет</a>
             </div>
         </div>
-
     </header>
-    <script>
-        let burgerBtn = document.querySelector(".header__burger");
-        let closeBtn = document.querySelector(".header__close-btn");
-        let hideMenu = document.querySelector(".header__hide-menu");
-        burgerBtn.addEventListener("click", function () {
-            burgerBtn.style.display = "none";
-            closeBtn.style.display = "block";
-            hideMenu.style.display = "flex";
-        })
-        closeBtn.addEventListener("click", function () {
-            burgerBtn.style.display = "block";
-            closeBtn.style.display = "none";
-            hideMenu.style.display = "none";
-        })
-    </script>
+    <section class="rex">
+        <img src="img/rex-mobile.png" alt="rex image" class="rex__img">
+        <h2 class="rex__heading">Рекс TV</h2>
+        <p class="rex__text">В&nbsp;прямом эфире из&nbsp;музея новости из&nbsp;мира животных, обзор
+            последних
+            археологических находок,
+            интервью с&nbsp;настоящими кладоискателями и&nbsp;многое другое</p>
+        <a href="#" class="rex__btn">
+            Перейти к трансляции
+        </a>
+    </section>
+    <section class="excursion">
+        <div class="excursion__heading-box">
+            <div class="excursion__line"></div>
+            <h2 class="excursion__heading">Ты можешь
+                узнать все!</h2>
+            <div class="excursion__line"></div>
+        </div>
+        <p class="excursion__text">Стоит только надеть очки</p>
+        <a href="#" class="excursion__btn">Каталог экскурсий</a>
+        <div class="excursion__box-slider"></div>
+    </section>
+    <section class="Imax">
+        <h2 class="Imax__heading">У нас интересно!</h2>
+        <p class="Imax__text">17 тематических залов, интерактивная карта развлечений, кинотеатры в IMAX-формате и лучшие
+            находки мира в одном месте</p>
+        <div class="Imax__video-box">
+            <video class="Imax__video" src="#" poster="img/Imax-poster.png">
+            </video>
+            <img src="img/Imax-play.png" alt="play button" class="Imax__play-btn">
+
+        </div>
+    </section>
+    <script src="js/menu.js"></script>
+    <script src="js/ImaxPlayer.js"></script>
 </body>
 
 </html>

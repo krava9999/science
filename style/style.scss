@@ -1,18 +1,12 @@
-﻿* {
+﻿$fontProject:roboto;
+
+* {
     margin: 0;
     padding: 0;
 }
 
 
-@font-face {
-    font-family: 'Geometria Bold';
-    src: url('Geometria-Bold.eot');
-    src: url('Geometria-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Geometria-Bold.woff') format('woff'),
-        url('Geometria-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 .header {
     &__top {
@@ -39,13 +33,7 @@
 
     }
 
-    &__slider-box {
-        width: 100%;
-        height: 594px;
 
-
-        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 19%, rgba(54, 11, 96, 1) 90%);
-    }
 
     &__hide-menu {
         display: none;
@@ -59,7 +47,7 @@
         border-top: 2px solid rgba(0, 0, 0, 0.2);
         position: absolute;
         padding-top: 23px;
-
+        padding-bottom: 50px;
     }
 
     &__menu-nav {
@@ -76,7 +64,7 @@
     }
 
     &__menu-link {
-        font-family: roboto;
+        font-family: $fontProject;
         font-size: 15px;
         line-height: 19px;
         text-align: center;
@@ -104,11 +92,196 @@
     }
 
     &__page-nav-text {
-        font-family: roboto;
+        font-family: $fontProject;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 15px;
         color: #312AB0;
+        margin-top: 11px;
+
+        &_margin {
+            margin-top: 15.5px;
+        }
     }
+
+    &__menu-btn {
+        background: #312AB0;
+        border-radius: 40px;
+        font-family: $fontProject;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 20px 0;
+        margin-top: 32px;
+        width: 302px;
+    }
+}
+
+.rex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 594px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 19%, rgba(54, 11, 96, 1) 90%);
+
+    &__img {
+        margin-left: auto;
+    }
+
+    &__heading {
+        font-family: $fontProject;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: 0.065em;
+        color: #FDFDFD;
+        text-align: left;
+        margin-left: 42px;
+    }
+
+    &__text {
+        font-family: $fontProject;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.065em;
+        color: #FFFFFF;
+        margin-top: 18px;
+        margin-left: 42px;
+        width: 292px;
+    }
+
+    &__btn {
+        font-family: $fontProject;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #312AB0;
+        background: #FFFFFF;
+        border-radius: 40px;
+        width: 306px;
+        padding: 15px 0;
+        margin: 0 auto;
+        margin-top: 42px;
+    }
+}
+
+.excursion {
+    display: flex;
+    flex-direction: column;
+    padding-top: 33px;
+    padding-bottom: 40px;
+
+    &__heading-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__line {
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        width: 88px;
+    }
+
+    &__heading {
+        max-width: 164px;
+        font-family: $fontProject;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: 0.065em;
+        color: #312AB0;
+        margin-left: 15px;
+
+    }
+
+    &__text {
+        font-family: $fontProject;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.065em;
+        text-align: center;
+        color: #000000;
+        margin-top: 13px;
+    }
+
+    &__btn {
+        font-family: $fontProject;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 306px;
+        text-decoration: none;
+        background: #312AB0;
+        border-radius: 40px;
+        padding: 15px 0;
+        margin: 0 auto;
+        margin-top: 23px;
+
+    }
+
+    &__box-slider {
+        height: 404px;
+    }
+}
+
+.Imax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 19%, rgba(54, 11, 96, 1) 90%);
+    padding-top: 137px;
+    padding-bottom: 160px;
+
+    &__heading {
+        font-family: $fontProject;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: 0.065em;
+        color: #FFFFFF;
+    }
+
+    &__text {
+        font-family: $fontProject;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.065em;
+        width: 300px;
+        margin-top: 19px;
+        color: #FFFFFF;
+    }
+
+    &__video-box {
+        position: relative;
+    }
+
+    &__video {
+        width: 100%;
+        min-height: 180px;
+        filter: drop-shadow(6px 9px 22px rgba(255, 255, 255, 0.42));
+        margin-top: 51px;
+    }
+
+    &__play-btn {
+        position: absolute;
+        left: 42%;
+        top: 45%;
+    }
+
 }
